@@ -1,0 +1,15 @@
+[Unit]
+Description=Queue new YouTube playlist videos in StemDeck
+After=network-online.target stemdeck.service
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+User=stemdeck
+Group=stemdeck
+WorkingDirectory=/opt/stemdeck
+EnvironmentFile=/etc/default/stemdeck-playlist-watcher
+ExecStart=/opt/stemdeck/.venv/bin/python /opt/stemdeck-watcher/stemdeck_playlist_watcher.py
+StateDirectory=stemdeck-watcher
+StateDirectoryMode=0750
+TimeoutStartSec=180

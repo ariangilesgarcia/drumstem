@@ -1,18 +1,15 @@
-# Credentials and local browser sessions
+# Local credentials and persisted data
 .env
 .env.*
-!.env.example
 .state/
 
-# Generated audio
+# Downloaded media
 downloads/*
-!downloads/.gitkeep
 
 # Personal playlist exports
 /setlist.json
 /setlist.full.json
 /setlist.*.json
-!/setlist.example.json
 
 # Python and tooling
 .venv/

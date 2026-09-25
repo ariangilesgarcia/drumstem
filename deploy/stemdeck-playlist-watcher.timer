@@ -1,0 +1,11 @@
+[Unit]
+Description=Scan the YouTube playlist for new videos
+
+[Timer]
+OnBootSec=45s
+OnUnitActiveSec=2min
+AccuracySec=10s
+Unit=stemdeck-playlist-watcher.service
+
+[Install]
+WantedBy=timers.target
