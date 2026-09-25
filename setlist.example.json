@@ -1,0 +1,29 @@
+{
+  "playlist_id": "0000000000000000000000",
+  "tracks": [
+    {
+      "position": 1,
+      "spotify_id": "0000000000000000000001",
+      "name": "Example Song One",
+      "artists": ["Example Artist"],
+      "duration_ms": 180000,
+      "youtube_url": null
+    },
+    {
+      "position": 2,
+      "spotify_id": "0000000000000000000002",
+      "name": "Example Song Two",
+      "artists": ["Example Artist"],
+      "duration_ms": 210000,
+      "youtube_url": null
+    },
+    {
+      "position": 3,
+      "spotify_id": "0000000000000000000003",
+      "name": "Example Song Three",
+      "artists": ["Example Artist", "Guest Artist"],
+      "duration_ms": 195000,
+      "youtube_url": null
+    }
+  ]
+}

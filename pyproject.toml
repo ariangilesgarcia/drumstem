@@ -1,0 +1,39 @@
+[project]
+name = "moises-sync"
+version = "0.1.0"
+description = "A local Spotify setlist to Moises workflow"
+requires-python = ">=3.12"
+dependencies = [
+    "httpx>=0.28.1",
+    "mutagen>=1.48.1",
+    "playwright>=1.63.0",
+    "python-dotenv>=1.2.3",
+    "rich>=15.0.0",
+    "spotipy>=2.26.0",
+    "typer>=0.27.2",
+    "yt-dlp[default]>=2026.8.19",
+]
+
+[project.scripts]
+moises-sync = "moises_sync.cli:main"
+
+[tool.uv.build-backend]
+module-root = ""
+
+[build-system]
+requires = ["uv_build>=0.12.19,<0.13"]
+build-backend = "uv_build"
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+    "ruff>=0.16.9",
+    "ty>=0.0.84",
+]

@@ -1,0 +1,31 @@
+# Credentials and local browser sessions
+.env
+.env.*
+!.env.example
+.state/
+
+# Generated audio
+downloads/*
+!downloads/.gitkeep
+
+# Personal playlist exports
+/setlist.json
+/setlist.full.json
+/setlist.*.json
+!/setlist.example.json
+
+# Python and tooling
+.venv/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+build/
+dist/
+*.egg-info/
+
+# Local editor and OS files
+.DS_Store
+.idea/
+.vscode/
